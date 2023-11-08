@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:id="@+id/swipeRefreshLayout"
+    tools:context=".MainActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/banner"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="60dp"
+                >
+
+                <ImageView
+                    android:layout_width="110sp"
+                    android:layout_height="110sp"
+                    android:src="@drawable/ipicone"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                        />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="YOUR IP ADDRESS"
+                            android:textSize="22dp"
+                            android:textStyle="bold"
+                            android:textColor="#4C5054"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="17dp"
+                                />
+                        <TextView
+                            android:id="@+id/ipaddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="0.0.0.0"
+                            android:textSize="28dp"
+                            android:textStyle="bold"
+                            android:textColor="#4C5054"
+                            android:layout_marginLeft="19dp"
+                            android:layout_marginTop="5dp"
+                            />
+
+
+
+                </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23sp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            >
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="WIFI IP"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#4C5054"
+                    android:layout_marginTop="5dp"
+                    />
+                <TextView
+                    android:id="@+id/wifi_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0.0.0.0"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#4C5054"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23sp"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal"
+            >
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="MAC "
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#4C5054"
+                    android:layout_marginTop="5dp"
+                    />
+                <TextView
+                    android:id="@+id/mac_ip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0.0.0.0"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#4C5054"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23sp"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal"
+            >
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="COUNTRY "
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#4C5054"
+                    android:layout_marginTop="5dp"
+                    />
+                <TextView
+                    android:id="@+id/country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="..............."
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#4C5054"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23sp"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal"
+            >
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="REGION "
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#4C5054"
+                    android:layout_marginTop="5dp"
+                    />
+                <TextView
+                    android:id="@+id/region_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="..............."
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#4C5054"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23sp"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal"
+            >
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="CITY "
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#4C5054"
+                    android:layout_marginTop="5dp"
+                    />
+                <TextView
+                    android:id="@+id/city_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="..............."
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#4C5054"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23sp"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal"
+            >
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="LATITUDE "
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#4C5054"
+                    android:layout_marginTop="5dp"
+                    />
+                <TextView
+                    android:id="@+id/latitude_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="..............."
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#4C5054"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23sp"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal"
+            >
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="LONGITUDE "
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#4C5054"
+                    android:layout_marginTop="5dp"
+                    />
+                <TextView
+                    android:id="@+id/longitude_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="..............."
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#4C5054"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23sp"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal"
+            >
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="ZIP CODE "
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#4C5054"
+                    android:layout_marginTop="5dp"
+                    />
+                <TextView
+                    android:id="@+id/zip_code_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="..............."
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#4C5054"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23sp"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal"
+            >
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="TIME ZONE "
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#4C5054"
+                    android:layout_marginTop="5dp"
+                    />
+                <TextView
+                    android:id="@+id/time_zone_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="..............."
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#4C5054"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23sp"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal"
+            >
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="ASN "
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#4C5054"
+                    android:layout_marginTop="5dp"
+                    />
+                <TextView
+                    android:id="@+id/asn_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="..............."
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#4C5054"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23sp"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal"
+            >
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="ISP "
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#4C5054"
+                    android:layout_marginTop="5dp"
+                    />
+                <TextView
+                    android:id="@+id/isp_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="..............."
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#4C5054"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23sp"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal"
+            >
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="IS PROXY "
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#4C5054"
+                    android:layout_marginTop="5dp"
+                    />
+                <TextView
+                    android:id="@+id/is_proxy_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="..............."
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#4C5054"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    />
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
+
+
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
